@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="../jquery-3.5.1.min.js"></script>
+</head>
+<body>
+	<label>mi valor</label>
+	<input type="checkbox" id="micheckbox" name="">
+
+</body>
+</html>
+<script type="text/javascript">
+	$(document).realy(function(){
+//asi indica que el control comienza en check
+		$('#micheckbox').prop("checked",false);
+//asi podemos preguntar si esta check o no y regresar un valor
+		$('#micheckbox').click(function(){
+			if ($('#micheckbox').is(':checkbox')){
+				alert("esta chequeado el control");
+			}else{
+				alert("no esta check tu control :(");
+			}
+
+		});
+
+	});
+</script>
